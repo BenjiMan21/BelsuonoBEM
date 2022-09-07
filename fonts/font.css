@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Trajan Pro 3";
+    src: url(/Практика/BelSuono/fonts/trajan-pro-3.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Практика/BelSuono/fonts/MontserratMedium.ttf);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(/Практика/BelSuono/fonts/MontserratBold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}

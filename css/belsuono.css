@@ -1,0 +1,490 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+  
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.btn {
+    border-radius: 10px;
+    background-color: #be0101;
+    font-family: "Trajan pro 3", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+
+.button__buy-ticket a:hover {
+    color: #be0101;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------HEADER----------*/
+
+.banner__container {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.background {
+    height: 700px;
+    background-image: url(../img/BGHeader.jpg);
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+.banner__date {
+    width: 50%;
+    display: flex;
+    line-height: 1;
+    text-align: left;
+}
+
+.banner__date-city-theater {
+    padding: 50px 15px 0;
+    color: #fff;
+    font-family: "Trajan pro 3", sans-serif;
+}
+
+.banner__date-day_font {
+    font-size: 72px;
+}
+
+.banner__month-time {
+     padding-left: 8px;
+}
+
+.banner__month {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.banner__year {
+    font-size: 16px;
+    top: -45px;
+    left: 205px;
+}
+
+.banner__time {
+    font-size: 16px;
+    padding-top: 4px;
+}
+
+.banner__city {
+    width: 50%;
+    font-size: 35px;
+    text-align: right;
+}
+
+.banner__theater {
+    width: 100%;
+    font-size: 36px;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.banner__img img {
+    width: 320px;
+}
+
+
+.banner__title-name {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.banner__logo-button {
+    color: #fff;
+    font-family: "Trajan pro 3", sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------------------------------------------END HEADER----------*/
+
+
+
+/*-----------------------------------------------------------------------------------------------MAIN----------*/
+
+.background__about {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.82), hsla(0, 0%, 100%, 0.82)), url(../img/BGAbout.jpg);
+    min-height: 700px;
+    display: flex;
+    padding: 40px 15px;
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+}
+
+.about__container {
+    display: flex;
+    align-items: center;
+}
+
+.button__buy-ticket_about {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.about__description {
+    padding-right: 50px;
+}
+
+.about__description h2 {
+    color: #000;
+    font-size: 30px;
+    line-height: 44px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+    text-transform: uppercase;
+}
+
+.about__description p {
+    margin: 25px 0 10px 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.about__video iframe {
+    max-width: 100%;
+}
+
+.about__song-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+}
+
+.about__song-date {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 10px 0 0 0;
+}
+
+/*-----------------------------------------------------------------------------------------------Photos & Slider----------*/
+
+
+.img-slider__wrapper {    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-slider__item {
+    display: flex;
+    width: 25%;
+    overflow: hidden;
+}
+
+.img-slider__item a {
+    position: relative;
+    width: 100%;
+    
+}
+.img-slider__item img {
+    display: block;
+    height: 345px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    transition: all .3s;
+    width: 100%;
+}
+
+.img-slider__photo:hover {
+    transform: scale(1.2);
+}
+
+.photo img {
+    width: 100%;
+}
+
+
+@media (max-width: 1200px) {
+
+.img-slider__item {
+    width: 50%;
+  }
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------END Photos & Slider----------*/
+
+.background__about_programm {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.71), hsla(0, 0%, 100%, 0.71)), url("../img/BGAboutTWO.jpg");
+}
+
+.about__description_programm {
+    padding-left: 50px;
+    padding-right: 12px;
+}
+
+.about__description_programm h2 {
+    margin-top: 0;
+}
+
+.about-video-button_reverse {
+    flex-direction: row-reverse;
+}
+
+.background__about_team {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/BGAboutThree.jpg);
+    background-attachment: scroll, fixed;
+}
+
+.about__description_team h2, .about__description_team p {
+    color: #fff;
+}
+
+.background__about_new-era {
+    background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.69), hsla(0, 0%, 100%, 0.69)), url(../img/BGAboutFOUR.jpg);
+}
+
+.about__video_text-color p {
+    color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------------------------------END MAIN----------*/
+
+
+/*-----------------------------------------------------------------------------------------------ADAPTIVE----------*/
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    /*-----------------------------------------------------------------------------------------------HEADER----------*/
+
+    /*-----------------------------------------------------------------------------------------------END HEADER----------*/
+
+    /*-----------------------------------------------------------------------------------------------MAIN----------*/
+
+    .about__description p {
+        font-size: 18px;
+    }
+
+    /*-----------------------------------------------------------------------------------------------END MAIN----------*/
+
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    /*-----------------------------------------------------------------------------------------------HEADER----------*/
+
+    .banner__date-day_font {
+        font-size: 65px;
+    }
+
+    .banner__month {
+        font-size: 32px;
+    }
+
+    .banner__year {
+        font-size: 14px;
+        top: -35px;
+        left: 165px;
+    }
+
+    .banner__time {
+        font-size: 14px;
+    }
+
+    .banner__city {
+        font-size: 32px;
+    }
+
+    .banner__theater {
+        font-size: 32px;
+        margin-top: -10px;
+    }
+
+    /*-----------------------------------------------------------------------------------------------END HEADER----------*/
+
+    /*-----------------------------------------------------------------------------------------------MAIN----------*/
+
+    .about__video {
+        margin-top: 50px;
+    }
+
+    .about__description {
+        padding-right: 12px;
+    }
+
+    .about__description_programm {
+        padding-left: 12px;
+    }
+
+
+    /*-----------------------------------------------------------------------------------------------END MAIN----------*/
+
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    /*-----------------------------------------------------------------------------------------------HEADER----------*/
+
+    .banner__theater {
+        font-size: 28px;
+        margin-top: -10px;
+    }
+
+
+    /*-----------------------------------------------------------------------------------------------END HEADER----------*/
+
+    /*-----------------------------------------------------------------------------------------------MAIN----------*/
+
+    /*-----------------------------------------------------------------------------------------------END MAIN----------*/
+
+    /*-----------------------------------------------------------------------------------------------Photos & Slider----------*/
+
+    .swiper-button-next, .swiper-button-prev {
+        color: #fff;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #fff;
+        width: 14px;
+        height: 14px;
+    }
+
+    .photo:hover img {
+        transform: none;
+    }
+
+    /*-----------------------------------------------------------------------------------------------END Photos & Slider----------*/
+
+
+}
+
+
+@media (max-width: 575px) {
+
+    /*-----------------------------------------------------------------------------------------------HEADER----------*/
+    .background {
+        background-image: url(../img/TRIO_MOB.png);
+        height: 100vh;
+        background-position: 50% 40%;
+    }
+
+    .banner__container {
+        height: 100%;
+    }
+
+    .banner__date-city-theater {
+        padding: 30px 15px 0;
+    }
+
+    .banner__date {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .banner__date-day_font {
+        font-size: 48px;
+    }
+
+    .banner__month {
+        font-size: 20px;
+    }
+
+    .banner__time {
+        font-size: 14px;
+        padding-top: 0;
+    }
+
+    .banner__theater {
+        font-size: 38px;
+    }
+
+    .banner__title-name {
+        font-size: 20px;
+        margin-bottom: 0;
+
+    }
+
+    .button__buy-ticket_banner {
+        margin: 10px 0;
+    }
+
+    /*-----------------------------------------------------------------------------------------------END HEADER----------*/
+
+    /*-----------------------------------------------------------------------------------------------MAIN----------*/
+
+    .about__description h2 {
+        text-align: center;
+    }
+
+    .about__description {
+        padding-right: 12px;
+    }
+
+    .about__description p {
+        font-size: 16px;
+    }
+
+    .about__video p {
+        text-align: center;
+    }
+
+    .about__mobile-quote {
+        margin-top: 40px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #505050;
+        padding: 10px;
+    
+    }
+
+    .about__mobile-quote_font {
+        text-align: center;
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+    }
+    /*-----------------------------------------------------------------------------------------------END MAIN----------*/
+
+
+    /*-----------------------------------------------------------------------------------------------Photos & Slider----------*/
+    
+
+    /*-----------------------------------------------------------------------------------------------END Photos & Slider----------*/
+}
